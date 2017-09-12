@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>首页</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/catears.css">
+
+</head>
+<body>
+	<!-- 顶部栏 -->
+	<div class="topBar">
+        <a href="#"><img src="images/ic_home.png" class="icon-home">天猫首页</a>
+        <span>喵，欢迎来天猫</span>
+        <a href="login.html" target="_blank">请登录</a>
+        <a href="registration.html" target="_blank">免费注册</a>
+        
+        <span class="pullright">
+            <a href="orders.html" target="_blank">我的订单</a>
+            <a href="shoppingCart.html" target="_blank"><img src="images/ic_shopping.png" class="icon-shopping">购物车<strong>0</strong>件</a>
+        </span>
+    </div>
+
+    <!-- 搜索栏 -->
+    <div class="searchBar">
+		<a href="#" class="logo">
+			<img src=images/logo.gif>
+		</a>
+
+		<div class="searchForm">
+			<input type="text" placeholder="鞋子，太阳镜" name="searchinput">
+			<button type="submit" onclick="window.location.href='search.html'">搜索</button>
+			<div class="searchBelow">
+				<a href="product.html" target="_blank">平衡车</a><span>|</span>
+				<a href="product.html" target="_blank">扫地机器人</a><span>|</span>
+				<a href="product.html" target="_blank">原汁机</a><span>|</span>
+				<a href="product.html" target="_blank">冰箱</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 滚动栏 -->
+	<div class="slidesShow">
+		<div class="head">
+			<div class="leftHead" onclick="myToggle()" id="leftHead">
+				<img src="images/ic_menu.png" class="icon-menu">
+				<span>商品分类</span>
+			</div>
+			<div class="rightHead">
+				<img src="images/chaoshi.png" onclick="window.location.href='category.html'" onmouseover="moveCatEarIn1(1)" onmouseout="moveCatEarOut1(1)">
+				<img src="images/guoji.png" onclick="window.location.href='category.html'" onmouseover="moveCatEarIn1(2)" onmouseout="moveCatEarOut1(2)">
+				<a href="category.html" target="_blank" onmouseover="moveCatEarIn1(3)" onmouseout="moveCatEarOut1(3)">平板电视</a>
+				<a href="category.html" target="_blank" onmouseover="moveCatEarIn1(4)" onmouseout="moveCatEarOut1(4)">马桶</a>
+				<a href="category.html" target="_blank" onmouseover="moveCatEarIn1(5)" onmouseout="moveCatEarOut1(5)">沙发</a>
+				<a href="category.html" target="_blank" onmouseover="moveCatEarIn1(6)" onmouseout="moveCatEarOut1(6)">电热水器</a>
+			</div>
+		</div>
+		<img src="images/catear.png" class="catear1" id="catear1">
+		<img src="images/catear.png" class="catear2" id="catear2">
+		<img src="images/catear.png" 	class="catear3" id="catear3">
+		<img src="images/catear.png" class="catear4" id="catear4">
+		<img src="images/catear.png" class="catear5" id="catear5">
+		<img src="images/catear.png" class="catear6" id="catear6">
+		<div class="pics">
+			<img src="images/1.jpg" class="mySlides" style="display: block;" onclick="window.location.href='category.html'">
+			<img src="images/2.jpg" class="mySlides" onclick="window.location.href='product.html'">
+			<img src="images/3.jpg" class="mySlides" onclick="window.location.href='product.html'">
+			<img src="images/4.jpg" class="mySlides" onclick="window.location.href='product.html'">
+			<img src="images/5.jpg" class="mySlides" onclick="window.location.href='product.html'">
+		</div>
+		<div class="dots">
+			<span class="mydots" onclick="currentSlides(1)"></span>
+			<span class="mydots" onclick="currentSlides(2)"></span>
+			<span class="mydots" onclick="currentSlides(3)"></span>
+			<span class="mydots" onclick="currentSlides(4)"></span>
+			<span class="mydots" onclick="currentSlides(5)"></span>
+		</div>
+		<div class="leftList" id="leftList" style="display: none;">
+			<div class="eachCategory" onmouseover="showList(1)" onmouseout="hideList()">
+                <a href="category.html" target="_blank">平板电视</a>
+            </div>
+            <div class="eachCategory" onmouseover="showList(2)" onmouseout="hideList()">
+                <a href="category.html" target="_blank">马桶</a>
+            </div>
+            <div class="eachCategory" onmouseover="showList(1)" onmouseout="hideList()">
+                <a href="category.html" target="_blank">沙发</a>
+            </div>
+            <div class="eachCategory" onmouseover="showList(2)" onmouseout="hideList()">
+                <a href="category.html" target="_blank">电热水器</a>
+            </div>
+            <div class="eachCategory" onmouseover="showList(1)" onmouseout="hideList()">
+                <a href="category.html" target="_blank">平衡车</a>
+            </div>
+            <div class="eachCategory" onmouseover="showList(2)" onmouseout="hideList()">
+                <a href="category.html" target="_blank">扫地机器人 </a>
+            </div>
+            <div class="eachCategory" onmouseover="showList(1)" onmouseout="hideList()">
+                <a href="category.html" target="_blank">原汁机</a>
+            </div>
+            <div class="eachCategory" onmouseover="showList(2)" onmouseout="hideList()">
+                <a href="category.html" target="_blank">冰箱</a>
+            </div>
+            <div class="eachCategory" onmouseover="showList(1)" onmouseout="hideList()">
+                <a href="category.html" target="_blank">空调</a>
+            </div>
+            <div class="eachCategory" onmouseover="showList(2)" onmouseout="hideList()">
+                <a href="category.html" target="_blank">女表</a>
+            </div>
+            <div class="eachCategory" onmouseover="showList(1)" onmouseout="hideList()">
+                <a href="category.html" target="_blank">男表</a>
+            </div>
+            <div class="eachCategory" onmouseover="showList(2)" onmouseout="hideList()">
+                <a href="category.html" target="_blank">男士手拿包 </a>
+            </div>
+            <div class="eachCategory" onmouseover="showList(1)" onmouseout="hideList()">
+                <a href="category.html" target="_blank">男士西服</a>
+            </div>
+            <div class="eachCategory" onmouseover="showList(2)" onmouseout="hideList()">
+                <a href="category.html" target="_blank">时尚男鞋</a>
+            </div>
+            <div class="eachCategory" onmouseover="showList(1)" onmouseout="hideList()">
+                <a href="category.html" target="_blank">品牌女装</a>
+            </div>
+            <div class="eachCategory" onmouseover="showList(2)" onmouseout="hideList()">
+                <a href="category.html" target="_blank">太阳镜</a>
+            </div>
+            <div class="eachCategory" onmouseover="showList(1)" onmouseout="hideList()">
+                <a href="category.html" target="_blank">安全座椅</a>
+            </div>
+		</div>
+		<div class="rightList">
+			<div class="listContainer" id="list1" onmouseover="showList(1)" onmouseout="hideList()">
+				<div class="row">
+		            <a href="product.html" target="_blank">屏大影院</a>
+		            <a href="product.html" target="_blank">周末</a>
+		            <a href="product.html" target="_blank">新品特惠</a>
+		            <a href="product.html" target="_blank">32吋电视机</a>
+		            <a href="product.html" target="_blank">智能网络</a>
+	                <div class="seperator"></div>
+	            </div>        
+	            <div class="row">
+	                <a href="product.html" target="_blank">USB高清解</a>
+	                <a href="product.html" target="_blank">芒果TV在线</a>
+	                <a href="product.html" target="_blank">抢购价</a>
+	                <a href="product.html" target="_blank">USB解码</a>
+	                <a href="product.html" target="_blank">32英吋</a>
+	                <a href="product.html" target="_blank">10核</a>
+	                <a href="product.html" target="_blank">TCL品牌日</a>
+	                <div class="seperator"></div>
+	            </div>        
+	            <div class="row">
+	            	<a href="product.html" target="_blank">不要赠品</a>
+	            	<a href="product.html" target="_blank">新品上市</a>
+	                <a href="product.html" target="_blank">4K硬屏</a>
+	                <a href="product.html" target="_blank">领100元券</a>
+	                <a href="product.html" target="_blank" style="color: rgb(135, 206, 250);">智能高清</a>
+	                <a href="product.html" target="_blank">8月，酷暑</a>
+	                <a href="product.html" target="_blank" style="color: rgb(135, 206, 250);">8月大促</a>
+	                <a href="product.html" target="_blank">天猫定制</a>
+	                <div class="seperator"></div>
+	            </div>        
+	            <div class="row">
+	                <a href="product.html" target="_blank">智能操作系统</a>
+	                <a href="product.html" target="_blank">金色外观</a>
+	                <a href="product.html" target="_blank">三星屏幕</a>
+	                <a href="product.html" target="_blank">客厅爆款</a>
+	                <a href="product.html" target="_blank">八核配置</a>
+	                <a href="product.html" target="_blank">限时特惠</a>
+	                <div class="seperator"></div>
+	            </div>        
+	            <div class="row">
+	                <a href="product.html" target="_blank">限时特惠</a>
+	                <a href="product.html" target="_blank">热销爆款</a>
+	                <a href="product.html" target="_blank">4K全高清</a>
+	                <a href="product.html" target="_blank" style="color: rgb(135, 206, 250);">六核智能</a>
+	                <a href="product.html" target="_blank">14核4K</a>
+	                <a href="product.html" target="_blank">YUNOS</a>
+	                <a href="product.html" target="_blank" style="color: rgb(135, 206, 250);">YUNOS</a>
+	                <a href="product.html" target="_blank">64位处理器</a>
+	                <div class="seperator"></div>
+	            </div>        
+	            <div class="row">
+	                <a href="product.html" target="_blank">YUNOS</a>
+	                <a href="product.html" target="_blank">微信电视</a>
+	                <a href="product.html" target="_blank">4k超清</a>
+	                <a href="product.html" target="_blank">64位真4K</a>
+	                <a href="product.html" target="_blank">10核机芯</a>
+	                <a href="product.html" target="_blank">V字黑釉底座</a>
+	                <a href="product.html" target="_blank">4K超清</a>
+	                <div class="seperator"></div>
+	            </div>        
+	            <div class="row">
+	                <a href="product.html" target="_blank">64位14核</a>
+	                <a href="product.html" target="_blank">海量影视</a>
+	                <a href="product.html" target="_blank">人气爆款</a>
+	                <a href="product.html" target="_blank">限时特惠</a>
+	                <a href="product.html" target="_blank">真4K屏</a>
+	                <a href="product.html" target="_blank">65吋巨屏</a>
+	                <a href="product.html" target="_blank" style="color: rgb(135, 206, 250);">4K超清视界</a>
+	                <a href="product.html" target="_blank">限时特惠</a>
+	                <div class="seperator"></div>
+	            </div>        
+	            <div class="row">
+	                <a href="product.html" target="_blank">55寸旗舰</a>
+	                <a href="product.html" target="_blank">4K机皇</a>
+	                <a href="product.html" target="_blank">曲面机皇</a>
+	                <a href="product.html" target="_blank" style="color: rgb(135, 206, 250);">轻薄4K</a>
+	                <div class="seperator"></div>
+	            </div>
+			</div>
+
+			<div class="listContainer" id="list2" onmouseover="showList(2)" onmouseout="hideList()">
+				<div class="row">
+					<a href="product.html" target="_blank">高性价比</a>
+					<a href="product.html" target="_blank">纳米自洁釉</a>
+					<a href="product.html" target="_blank">盖板易拆</a>
+					<a href="product.html" target="_blank">领券更优惠</a>
+					<a href="product.html" target="_blank">全国联保</a>
+					<a href="product.html" target="_blank">咨询大惊喜</a>
+					<a href="product.html" target="_blank">咨询大惊喜</a>	
+					<div class="seperator"></div>
+				</div>		
+				<div class="row">
+					<a href="product.html" target="_blank">全自动感应</a>
+					<a href="product.html" target="_blank">即热式功能</a>
+					<a href="product.html" target="_blank">智能护理</a>
+					<a href="product.html" target="_blank">官方正品</a>
+					<a href="product.html" target="_blank">高效节水</a>
+					<a href="product.html" target="_blank">立减300</a>
+					<a href="product.html" target="_blank">官方正品</a>	
+					<div class="seperator"></div>
+				</div>			
+				<div class="row">
+					<a href="product.html" target="_blank">3秒速冲</a>
+					<a href="product.html" target="_blank">送角阀软管</a>
+					<a href="product.html" target="_blank">送角阀软管</a>
+					<a href="product.html" target="_blank">12大中心仓</a>
+					<a href="product.html" target="_blank">12大中心仓</a>
+					<a href="product.html" target="_blank">蹲坐两用</a>
+					<a href="product.html" target="_blank">领券减50</a>
+					<a href="product.html" target="_blank">全国联保</a>
+					<div class="seperator"></div>
+				</div>		
+				<div class="row">
+					<a href="product.html" target="_blank">德国品牌</a>
+					<a href="product.html" target="_blank">加购收藏</a>
+					<a href="product.html" target="_blank">加长型缸体</a>
+					<a href="product.html" target="_blank">喷射虹吸</a>
+					<a href="product.html" target="_blank">家装狂欢节</a>
+					<a href="product.html" target="_blank">AB1287</a>
+					<a href="product.html" target="_blank">领券再减</a>
+					<a href="product.html" target="_blank">千城入户</a>	
+					<div class="seperator"></div>
+				</div>				
+				<div class="row">
+					<a href="product.html" target="_blank">强劲冲力</a>
+					<a href="product.html" target="_blank">包安装</a>
+					<a href="product.html" target="_blank">土豪直接付款</a>
+					<a href="product.html" target="_blank">咨询在线客服</a>
+					<a href="product.html" target="_blank">赠送原厂配件</a>
+					<a href="product.html" target="_blank">新聚汇</a>
+					<a href="product.html" target="_blank">吸力哥</a>
+					<a href="product.html" target="_blank">九牧正品</a>
+					<div class="seperator"></div>
+				</div>		
+				<div class="row">
+					<a href="product.html" target="_blank">覆盖区域</a>
+					<a href="product.html" target="_blank">指定1800</a>
+					<a href="product.html" target="_blank">晒图返10元</a>
+					<a href="product.html" target="_blank">1300城免</a>
+					<a href="product.html" target="_blank">久坐舒适</a>
+					<a href="product.html" target="_blank">晒图送20元</a>
+					<a href="product.html" target="_blank">摩普智能马桶</a>
+					<div class="seperator"></div>
+				</div>		
+				<div class="row">
+					<a href="product.html" target="_blank">送空调扇</a>
+					<a href="product.html" target="_blank">咨询大惊喜</a>
+					<a href="product.html" target="_blank">节水小管家</a>
+					<a href="product.html" target="_blank">高端大气</a>
+					<a href="product.html" target="_blank">科勒授权</a>
+					<a href="product.html" target="_blank">超旋风系列</a>
+					<a href="product.html" target="_blank">限时升级</a>
+					<div class="seperator"></div>
+				</div>		
+				<div class="row">
+					<a href="product.html" target="_blank">立减500</a>
+					<a href="product.html" target="_blank">赠送角阀软管</a>
+					<a href="product.html" target="_blank">法恩莎正品</a>
+					<a href="product.html" target="_blank">12大中心仓</a>
+					<div class="seperator"></div>
+				</div>		
+			</div>	
+		</div>
+	</div>
+
+	<!-- 内容 -->
+	<div class="content">
+		<div class="content-1">
+			<span class="mark"></span>
+			<span class="contentTitle">平板电视</span>
+			<br/>
+			<a href="product.html" target="_blank">
+				<div class="products">
+					<img src="images/676.jpg">
+					<span class="detail">[热销]夏普屏PANDA/熊猫 LE39D71S</span>
+					<span class="price">￥1,874.25</span>
+				</div>
+			</a>
+			<a href="product.html" target="_blank">
+				<div class="products">
+					<img src="images/665.jpg">
+					<span class="detail">[热销]Changhong/长虹 65S1安卓智</span>
+					<span class="price">￥3,824.16</span>
+				</div>
+			</a>
+			<a href="product.html" target="_blank">
+				<div class="products">
+					<img src="images/654.jpg">
+					<span class="detail">[热销]Hisense/海信 LED40EC52</span>
+					<span class="price">￥1,439.40</span>
+				</div>
+			</a>
+			<a href="product.html" target="_blank">
+				<div class="products">
+					<img src="images/643.jpg">
+					<span class="detail">[热销]Hisense/海信 LED49EC32</span>
+					<span class="price">￥1,679.40</span>
+				</div>
+			</a>
+			<a href="product.html" target="_blank">
+				<div class="products">
+					<img src="images/632.jpg">
+					<span class="detail">[热销]Konka/康佳 LED32S1卧室32</span>
+					<span class="price">￥1,104.35</span>
+				</div>
+			</a>
+			<div style="clear: both;"></div>
+		</div>
+		<div class="content-2">
+			<span class="mark"></span>
+			<span class="contentTitle">马桶</span>
+			<br/>
+			<a href="product.html" target="_blank">
+				<div class="products">
+					<img src="images/1324.jpg">
+					<span class="detail">[热销]纳蒂兰卡 1082卫浴洁具 钻石切边 坐</span>
+					<span class="price">￥1,710.00</span>
+				</div>
+			</a>
+			<a href="product.html" target="_blank">
+				<div class="products">
+					<img src="images/1313.jpg">
+					<span class="detail">[热销]德国DGPOSY超漩式彩色马桶缓降坐便器</span>
+					<span class="price">￥1,799.25</span>
+				</div>
+			</a>
+			<a href="product.html" target="_blank">
+				<div class="products">
+					<img src="images/1302.jpg">
+					<span class="detail">[热销]纳蒂兰卡1066卫浴漩冲虹吸式马桶350</span>
+					<span class="price">￥1,503.00</span>
+				</div>
+			</a>
+			<a href="product.html" target="_blank">
+				<div class="products">
+					<img src="images/1291.jpg">
+					<span class="detail">[热销]箭牌马桶/ARROW AB1118脲醛盖</span>
+					<span class="price">￥1,482.00</span>
+				</div>
+			</a>
+			<a href="product.html" target="_blank">
+				<div class="products">
+					<img src="images/1280.jpg">
+					<span class="detail">[热销]乐洁士智能马桶高品质全自动遥控感应一体式</span>
+					<span class="price">￥8,512.00</span>
+				</div>
+			</a>
+			<div style="clear: both;"></div>
+		</div>
+		<div class="contentend">
+			<img src="images/end.png" >
+		</div>
+	</div>
+
+	<!-- 底部 -->
+	<div class="footer">
+		<div class="footer-ensure">
+			<a href="#">
+				<img src="images/ensure.png" >
+			</a>
+		</div>
+		<div class="footer-desc"> 
+			<div class="footer-descColumn">
+				<span>购物指南</span>
+				<a href="#">免费注册</a>
+				<a href="#">开通支付宝</a>
+				<a href="#">支付宝充值</a>
+			</div>
+			<div class="footer-descColumn">
+				<span>天猫保障</span>
+				<a href="#">发票保障</a>
+				<a href="#">售后规则</a>
+				<a href="#">缺货赔付</a>
+			</div>
+			<div class="footer-descColumn"> 
+				<span>支付方式</span>
+				<a href="#">快捷支付</a>
+				<a href="#">信用卡</a>
+				<a href="#">余额宝</a>
+				<a href="#">蚂蚁花呗</a>
+				<a href="#">货到付款</a>
+			</div>
+			<div class="footer-descColumn">
+				<span>商家服务</span>
+				<a href="#">商家入驻</a>
+				<a href="#">商家中心</a>
+				<a href="#">天猫智库</a>
+				<a href="#">天猫规则</a>
+				<a href="#">物流服务</a>
+				<a href="#">喵言喵语</a>
+				<a href="#">运营服务</a>
+			</div>
+			<div class="footer-descColumn">
+				<span>手机天猫</span>
+				<a href="#">
+					<img src="images/ma.png" class="QRcode">
+				</a>
+			</div>
+			<div style="clear: both;"></div>
+			<img src="images/cateye.png" class="cateye">
+		</div>
+
+		<div class="big-info">
+			<div class="information">
+				<div class="copyright">
+					<div class="white-link">
+						<a href="#">关于天猫</a>
+						<a href="#">帮助中心</a>
+						<a href="#">开放平台</a>
+						<a href="#">诚聘英才</a>
+						<a href="#">联系我们</a>
+						<a href="#">网站合作</a>
+						<a href="#">法律声明</a>
+						<a href="#">知识产权</a>
+						<a href="#">廉正举报</a>		
+					</div>
+					<div class="white-link">
+						<a href="#">阿里巴巴集团 </a><span>|</span>
+						<a href="#">淘宝网 </a><span>|</span>
+						<a href="#">天猫 </a><span>|</span>
+						<a href="#">聚划算 </a><span>|</span>
+						<a href="#">全球速卖通 </a><span>|</span>
+						<a href="#">阿里巴巴国际交易市场 </a><span>|</span>
+						<a href="#">1688 </a><span>|</span>
+						<a href="#">阿里妈妈 </a><span>|</span>
+						<a href="#">阿里旅行·去啊 </a><span>|</span>
+						<a href="#">阿里云计算 </a><span>|</span>
+						<a href="#">阿里通信 </a><span>|</span>
+						<a href="#">YunOS </a><span>|</span>
+						<a href="#">万网 </a><span>|</span>
+						<a href="#">高德 </a><span>|</span>
+						<a href="#">优视 </a><span>|</span>
+						<a href="#">友盟 </a><span>|</span>
+						<a href="#">虾米 </a><span>|</span>
+						<a href="#">天天动听 </a><span>|</span>
+						<a href="#">来往 </a><span>|</span>
+						<a href="#">支付宝 </a><span>|</span>
+						<a href="#">钉钉 </a><span>|</span>				
+					</div>
+					<div class="license">
+						<p>增值电信业务经营许可证： 浙B2-20110446 网络文化经营许可证：浙网文[2015]0295-065号 互联网医疗保健信息服务 审核同意书 浙卫网审【2014】6号 互联网药品信息服务资质证书编号：浙-（经营性）-2012-0005</p>
+						<p>© 2003-2016 TMALL.COM 版权所有</p>
+						<img src="images/copyright1.jpg">
+						<img src="images/copyright2.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script src="js/index.js"></script>
+</body>
+</html>

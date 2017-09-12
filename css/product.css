@@ -1,0 +1,259 @@
+.container {
+	width: 1025px;
+	margin: 0 auto;
+}
+
+.leftInformation {
+	width: 450px;
+	height:500px;
+	float: left;
+}
+
+.bigPic {
+	width: 100%;
+	text-align: center;
+	margin:20px 0;
+}
+
+.bigPic img {
+	width: 350px;
+	padding: 20px;
+	border:1px solid #f6f6f6;
+}
+
+.smallPic {
+	width: 100%;
+	text-align: center;
+}
+
+.pictures {
+	width: 55px;
+	display: inline-block;
+	margin: 0 3px;
+	border:2px solid white;
+}
+
+.active {
+	border:2px solid #C40000;
+}
+
+.rightInformation {
+	width: 575px;
+	height:500px;
+	/*background-color: blue;*/
+	float: left;
+}
+
+.describe1 {
+	font-weight: bold;
+	margin: 21px 0 0 4px;
+	font-size: 17px
+}
+
+.describe2 {
+	color: #DD2727;
+	margin: 5px 0 0 4px;
+}
+
+.subTitle {
+	background-color: #2DA77A;
+	width: 550px;
+	height:50px;
+	text-align: center;
+	vertical-align: middle;
+	color:white;
+}
+
+.subTitle p {
+	font-size: 13px;
+	position: relative;
+	top: 10px;
+}
+
+.subTitleInfo {
+	background-image: url(../images/priceBackground.png);
+	width: 550px;
+	height: 115px;
+}
+
+.subTitleInfo img {
+	width: 60px;
+	margin: 15px 2px 10px 10px;
+}
+
+.textGrey {
+	color: #999;
+	margin: 0px 35px 0px 10px;
+}
+
+.saleReview {
+	width:550px;
+	padding: 10px 0;
+	border-top: 1px dotted #C9C9C9;
+	border-bottom: 1px dotted #C9C9C9;
+	margin: 20px 0;
+}
+
+.saleReview1 {
+	width: 270px;
+	text-align: center;
+	border-right: 1px solid #C9C9C9;
+	display: inline-block;
+}
+
+.saleReview2 {
+	width: 270px;
+	text-align: center;
+	display: inline-block;
+}
+.textRed {
+	color: #C40000;
+	font-weight: bold;
+}
+.buyNumber {
+	color: #999;
+	margin: 10px 0 20px 0;
+}
+
+.numIcon {
+	display: inline-block;
+	/*border:1px solid black;*/
+	height: 25px;
+	position: relative;
+	top: 5px;
+	margin-right: 2px;
+}
+
+.numIconItem {
+	border: 1px solid #999;
+	display: block;
+	width: 17px;
+	height: 13px;
+	text-align: center;
+	font-size: 8px;
+	margin-bottom: 1px;
+	cursor: pointer;
+}
+
+.promise span {
+	color: #999;
+}
+
+.promise a {
+	color: #666;
+}
+
+.buyBtn {
+	width:550px;
+	margin: 30px 0;
+}
+
+.btn1 {
+	width: 170px;
+	height: 36px;
+	background-color: #FFEDED;
+	border: 1px solid #C40000;
+	color: #C40000;
+	font-size: 16px;
+	margin: 0 10px 0 93px;
+}
+
+.btn2 {
+	width: 170px;
+	height: 36px;
+	background-color: #C40000;
+	border: 1px solid #C40000;
+	color: white;
+	font-size: 16px;
+}
+
+.content{
+	width: 800px;
+	/*height: 900px;*/
+	margin: 40px auto;
+	/*background-color: red;*/
+}
+
+.contentBar {
+	width: 778px;
+	border:1px solid #dfdfdf;
+	padding: 20px 20px 20px 0;
+	font-size: 13px;
+}
+
+.contentBarSpan {
+	padding: 20px 20px;
+	border-right: 1px dotted #dfdfdf;
+	cursor: pointer;
+}
+
+.barActive {
+	color: #C40000;
+	border-top: 3px solid #C40000;
+}
+
+.contentDescribe {
+	padding: 40px;
+	width: 718px;
+	border-left: 1px solid #dfdfdf;
+	border-right: 1px solid #dfdfdf;
+}
+
+.contentDescribe p {
+	margin: 0 0 20px 0;
+	font-weight: bold;
+	color: #999;
+}
+
+.contentDescribe span {
+	display: block;
+	float: left;
+	width: 230px;
+	padding: 8px 0;
+	color: #666
+}
+
+.content img {
+	width:100%
+}
+
+#contentDescribe {
+	display: block;
+
+}
+
+#contentReview {
+	display: none;
+	cursor: pointer;
+}
+
+.contentReview {
+	padding: 0px 20px 40px 20px;
+	width: 760px;
+}
+
+.contentReviewItem {
+	padding: 30px 0;
+	border-bottom: 1px dashed #dfdfdf;
+}
+
+.contentReviewItemDesc{
+	width: 500px;
+	float: left;
+}
+
+.contentReviewItemUserInfo {
+	width: 150px;
+	float: right;
+	text-align: right;
+}
+
+.contentReviewItemDate{
+	color: #999;
+	margin-top: 15px;
+}
+
+.userInfoGrayPart {
+	color: #999;
+}
+

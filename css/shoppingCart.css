@@ -1,0 +1,181 @@
+.shoppingCartTop {
+	width: 1000px;
+	height: 30px;
+	/*background-color: blue;*/
+	margin: 0 auto;
+	text-align: right;
+}
+
+.shoppingCartTop .title {
+	font-size: 12px;
+}
+
+.shoppingCartTop .price {
+	font-size: 15px;
+	color: #C40000;
+}
+
+.shoppingCartTop .settleButton {
+	width: 45px;
+	height: 25px;
+	/*background-color: #aaa;*/
+	color: white;
+	display: inline-block;
+	/*border: 2px solid #aaa;*/
+	border-radius: 2px;
+	padding: 4px 0;
+	margin-left: 5px;
+}
+
+.shoppingCart {
+	width: 1000px;
+	/*height: 800px;*/
+	/*background-color: red;*/
+	margin: 0 auto;
+}
+
+.shoppingTable {
+	border-collapse:collapse;
+}
+
+.tableHead {
+	margin-bottom: 10px;
+}
+
+.tableHead td{
+	width: 100px;
+	padding:15px 20px;
+}
+
+.tableBody td {
+	padding:0px 20px;
+}
+
+.tableBody {
+	border: 1px solid #999;
+	padding: 20px;
+}
+
+.shoppingPic {
+	width: 80px;
+	height: 80px;
+	margin:5px 0 20px 40px;
+}
+
+.inputNum {
+	width: 40px;
+}
+
+.selectIcon {
+	margin-left: 20px;
+	position: relative;
+	top: 50px;
+	left: -10px;
+	cursor: pointer;
+}
+
+.itemName {
+	position: relative;
+	top: -18px;
+}
+
+.itemName a {
+	color: black;
+}
+
+.itemName a:hover {
+	color: #C40000;
+	text-decoration: underline;
+}
+
+.itemPromise {
+	position: relative;
+	top: 37px;
+}
+
+.itemPrice span{
+	display: inline-block;
+}
+
+.price1 {
+	text-decoration: line-through;
+	color: #9c9c9c;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.price2 {
+	color: #C40000;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.price3 {
+	color: #C40000;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.minusIcon, .addIcon {
+	border: 1px solid #999;
+	display: inline-block;
+	width:15px;
+	height: 15px;	
+	cursor: pointer;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.delete {
+	color: #999;
+	cursor: pointer;
+}
+
+.delete:hover {
+	color: #C40000;	
+}
+
+.shoppingCartBottom {
+	width: 1000px;
+	height: 50px;
+	background-color: #e5e5e5;
+	margin: 20px auto;
+}
+
+.rightBottom {
+	float: right;
+}
+
+.settleButtonBig {
+	width: 120px;
+	height: 50px;
+	/*background-color: #aaa;*/
+	color: white;
+	display: inline-block;
+	/*border: 2px solid #aaa;*/
+	font-size: 19px;
+	font-weight: bold;
+	/*border-radius: 2px;*/
+	/*padding: 4px 0;*/
+	margin-left: 10px;
+}
+
+.finalNum, .finalPrice {
+	color: #C40000;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.finalNum {
+	font-size: 16px;
+}
+
+.abled {
+	background-color: #C40000;
+	border: 2px solid #C40000;
+}
+
+.disabled {
+	background-color: #aaa;
+	border: 2px solid #aaa;
+}

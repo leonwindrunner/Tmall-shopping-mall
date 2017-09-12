@@ -1,0 +1,161 @@
+/*slidesShow*/
+.slidesShow {
+    position: relative;
+}
+.slidesShow .head {
+    margin-top: 40px;
+    background-color: #DD2727;
+}
+.leftHead {
+    width: 200px;
+    display: inline-block;
+    margin-left: 240px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.leftHead .icon-menu {
+    height: 25px;
+    position: relative;
+    top: 6px;
+    margin-left: 5px;
+}
+.slidesShow .rightHead {
+    display: inline-block;
+
+}
+.rightHead img {
+    height: 30px;
+    margin: 0 20px;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+}
+.rightHead a {
+    color: white;
+    font-size: 15px;
+    margin: 0 20px;
+    position: relative;
+    bottom: 1px;
+}
+.pics img {
+    width: 100%;    
+    display: none;
+}
+.dots {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: -25px;
+}
+.mydots {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+.leftList {
+    width: 200px;
+    background-color: #e2e2e3;
+    position: absolute;
+    top:50.4px;
+    left: 240px;
+}
+.leftList .eachCategory {
+    padding:5px 20px;
+}
+.leftList .eachCategory:hover {
+    background-color: white;
+}
+.leftList .eachCategory a {
+    color: black;
+    font-size:15px; 
+}
+.rightList .row {
+    padding-top:21px;
+    padding-left: 50px;
+    padding-right:50px; 
+}
+.rightList .seperator {
+    border-bottom: 1px dashed #e7e7e7;
+    margin-top:21px;
+}
+.rightList a {
+    margin: 0 15px;
+}
+.listContainer{
+    display: none;
+    width: 800px;
+    height: 469.2px;
+    background-color: white;
+    position: absolute;
+    top:50.4px;
+    left: 440px;
+}
+
+
+/*Content*/
+.content {
+    padding: 50px 10px;
+    margin:10px auto;
+    background-color: #F5F5F5;
+    max-width: 1013px;
+}
+.content .products {
+    width: 188px;
+    height: 270px;
+    border: 1px solid white;
+    float: left;
+    margin: 8px 4px;
+    background-color: white;
+    padding:2px;
+} 
+.products img {
+    width: 187px;
+    height: 190px;
+}
+.products .price {
+    display: block;
+    color:#FF003A;
+    font-size: 16px;
+    padding-left: 12px;
+    margin-top: -10px;
+}
+.products .detail {
+    display: block;
+    color:#666666;
+    font-size: 12px;
+    padding: 16px;
+}
+.content .mark{
+    display: inline-block;
+    width: 5px;
+    height: 20px;
+    background-color: #19C8A9;
+    margin-left: 5px;
+}
+.content .contentTitle {
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    bottom: 3px;
+}
+.content .content-2 {
+    margin-top: 40px;
+}
+.contentend img{
+    display: block;
+    width: 100px;
+    margin: 43px auto 0 ;
+}
+
+.moreRed {
+    background-color: #C60A0A;
+}

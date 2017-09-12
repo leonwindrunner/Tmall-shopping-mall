@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/shoppingCart.css">
+</head>
+
+<body>
+	<!-- 顶部栏 -->
+	<div class="topBar">
+        <a href="#"><img src="images/ic_home.png" class="icon-home">天猫首页</a>
+        <span>喵，欢迎来天猫</span>
+        <a href="#">请登录</a>
+        <a href="#">免费注册</a>
+        
+        <span class="pullright">
+            <a href="#">我的订单</a>
+            <a href="#"><img src="images/ic_shopping.png" class="icon-shopping">购物车<strong>0</strong>件</a>
+        </span>
+    </div>
+
+    <!-- 小搜索栏 -->
+    <div class="searchBarSmall">
+		<a href="#" class="logo">
+			<img src=images/simpleLogo.png>
+		</a>
+
+		<div class="searchForm">
+			<input type="text" placeholder="鞋子，太阳镜" name="searchinput">
+			<button type="submit">搜索</button>
+			<div class="searchBelow">
+				<a href="#">平衡车</a><span>|</span>
+				<a href="#">扫地机器人</a><span>|</span>
+				<a href="#">原汁机</a><span>|</span>
+				<a href="#">冰箱</a>
+			</div>
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+
+	<!-- 购物车 -->
+	<div class="shoppingCartTop">
+		<span class="title">已选商品（不含运费）</span>
+		<span class="price">￥<span id="priceTop">0.00</span></span>
+		<button class="buttonIcon settleButton disabled">结算</button>
+	</div>
+	<div class="shoppingCart">
+		<table class="shoppingTable">
+			<tr class="tableHead">
+				<td>选择商品</td>
+				<td style="width: 500px;">商品信息</td>
+				<td>单价</td>
+				<td>数量</td>
+				<td>金额</td>
+				<td>操作</td>
+			</tr>
+			<tr class="tableBody">
+				<td>
+					<img src="images/cartNotSelected.png" class="selectIcon unSelected" onclick="settle(1)" id="icon1">
+					<img src="images/shoppingCart1.jpg" class="shoppingPic">
+				</td>
+				<td class="itemName">
+					<a href="#">洁霸BF522多功能洗地机刷地机酒店家用地毯清洗机 擦地机抛光机   库存60件</a>
+					<div class="itemPromise">
+						<img src="images/creditcard.png">
+						<img src="images/7day.png">
+						<img src="images/promise.png">
+					</div>
+				</td>
+				<td class="itemPrice">
+					<span class="price1">￥1900.0</span><span class="price2">￥<span id="item1Price">1235.0</span></span>
+				</td>
+				<td>
+					<span class="minusIcon" onclick="changeNum1(-1)">-</span><input class="inputNum" type="text" name="" value="4" id="item1Num" onkeyup="checkNum1()"><span class="addIcon" onclick="changeNum1(1)">+</span>
+				</td>
+				<td class="price3">￥<span id="item1Total">4940</span></td>
+				<td><span class="delete">删除</span></td>
+			</tr>
+			<tr class="tableBody"> 
+				<td>
+					<img src="images/cartNotSelected.png" class="selectIcon unSelected" onclick="settle(2)" id="icon2">
+					<img src="images/shoppingCart2.jpg" class="shoppingPic">
+				</td>
+				<td class="itemName">
+					<a href="#">两轮平衡车双轮儿童思维漂移电动扭扭车智能滑板车成人体感代步车   库存30件</a>
+					<div class="itemPromise">
+						<img src="images/creditcard.png">
+						<img src="images/7day.png">
+						<img src="images/promise.png">
+					</div>
+				</td>
+				<td class="itemPrice">
+					<span class="price1">￥889.0</span>
+					<span class="price2">￥<span  id="item2Price">755.65</span></span>
+				</td>
+				<td>
+					<span class="minusIcon" onclick="changeNum2(-1)">-</span><input class="inputNum" type="text" name="" value="1" id="item2Num" onkeyup="checkNum2()"><span class="addIcon" onclick="changeNum2(1)">+</span>
+				</td>
+				<td class="price3" >￥<span id="item2Total">755.65</span></td>
+				<td><span class="delete">删除</span></td>
+			</tr>
+		</table>
+	</div>
+	<div class="shoppingCartBottom">
+		<div class="rightBottom">
+			<span>已选商品<span class="finalNum" id="finalNum">0</span>件 合计（不含运费）</span>
+			<span class="finalPrice">￥<span id="totalPrice">0.00</span></span>
+			<button class="buttonIcon settleButtonBig disabled">结算</button>
+		</div>
+		<div class="clear:both"></div>
+	</div>
+
+	<!-- 底部 -->
+	<div class="footer">
+		<div class="footer-ensure">
+			<a href="#">
+				<img src="images/ensure.png" >
+			</a>
+		</div>
+		<div class="footer-desc"> 
+			<div class="footer-descColumn">
+				<span>购物指南</span>
+				<a href="#">免费注册</a>
+				<a href="#">开通支付宝</a>
+				<a href="#">支付宝充值</a>
+			</div>
+			<div class="footer-descColumn">
+				<span>天猫保障</span>
+				<a href="#">发票保障</a>
+				<a href="#">售后规则</a>
+				<a href="#">缺货赔付</a>
+			</div>
+			<div class="footer-descColumn"> 
+				<span>支付方式</span>
+				<a href="#">快捷支付</a>
+				<a href="#">信用卡</a>
+				<a href="#">余额宝</a>
+				<a href="#">蚂蚁花呗</a>
+				<a href="#">货到付款</a>
+			</div>
+			<div class="footer-descColumn">
+				<span>商家服务</span>
+				<a href="#">商家入驻</a>
+				<a href="#">商家中心</a>
+				<a href="#">天猫智库</a>
+				<a href="#">天猫规则</a>
+				<a href="#">物流服务</a>
+				<a href="#">喵言喵语</a>
+				<a href="#">运营服务</a>
+			</div>
+			<div class="footer-descColumn">
+				<span>手机天猫</span>
+				<a href="#">
+					<img src="images/ma.png" class="QRcode">
+				</a>
+			</div>
+			<div style="clear: both;"></div>
+			<img src="images/cateye.png" class="cateye">
+		</div>
+
+		<div class="big-info">
+			<div class="information">
+				<div class="copyright">
+					<div class="white-link">
+						<a href="#">关于天猫</a>
+						<a href="#">帮助中心</a>
+						<a href="#">开放平台</a>
+						<a href="#">诚聘英才</a>
+						<a href="#">联系我们</a>
+						<a href="#">网站合作</a>
+						<a href="#">法律声明</a>
+						<a href="#">知识产权</a>
+						<a href="#">廉正举报</a>		
+					</div>
+					<div class="white-link">
+						<a href="#">阿里巴巴集团 </a><span>|</span>
+						<a href="#">淘宝网 </a><span>|</span>
+						<a href="#">天猫 </a><span>|</span>
+						<a href="#">聚划算 </a><span>|</span>
+						<a href="#">全球速卖通 </a><span>|</span>
+						<a href="#">阿里巴巴国际交易市场 </a><span>|</span>
+						<a href="#">1688 </a><span>|</span>
+						<a href="#">阿里妈妈 </a><span>|</span>
+						<a href="#">阿里旅行·去啊 </a><span>|</span>
+						<a href="#">阿里云计算 </a><span>|</span>
+						<a href="#">阿里通信 </a><span>|</span>
+						<a href="#">YunOS </a><span>|</span>
+						<a href="#">万网 </a><span>|</span>
+						<a href="#">高德 </a><span>|</span>
+						<a href="#">优视 </a><span>|</span>
+						<a href="#">友盟 </a><span>|</span>
+						<a href="#">虾米 </a><span>|</span>
+						<a href="#">天天动听 </a><span>|</span>
+						<a href="#">来往 </a><span>|</span>
+						<a href="#">支付宝 </a><span>|</span>
+						<a href="#">钉钉 </a><span>|</span>				
+					</div>
+					<div class="license">
+						<p>增值电信业务经营许可证： 浙B2-20110446 网络文化经营许可证：浙网文[2015]0295-065号 互联网医疗保健信息服务 审核同意书 浙卫网审【2014】6号 互联网药品信息服务资质证书编号：浙-（经营性）-2012-0005</p>
+						<p>© 2003-2016 TMALL.COM 版权所有</p>
+						<img src="images/copyright1.jpg">
+						<img src="images/copyright2.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/shoppingCart.js"></script>
+</body>
+
+

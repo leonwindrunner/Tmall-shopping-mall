@@ -1,0 +1,154 @@
+/*Common*/
+body {
+    font-size: 12px;
+    font-family: Arial;
+    margin: 0;
+}
+.redColor {
+    color: #C40000 !important;
+}
+a   {
+    color: #999;
+    text-decoration: none;
+}
+.pullright {
+    float: right;
+}
+
+
+/*topBar*/
+.topBar {
+    background-color: #f2f2f2;
+    padding: 5px 0 7px 0;
+}
+.topBar span, .topBar a {
+    color:#999;
+    margin: 0 10px;
+}
+.topBar .icon-home, .topBar .icon-shopping {
+    height: 15px;
+    position: relative;
+    top: 2px;
+}
+.topBar a:hover {
+    color: #C40000;
+}
+
+
+/*searchBar*/
+.searchBar {
+    position: relative;
+}
+.searchForm {
+    background-color: #C40000;
+    width: 400px;
+    margin: 50px auto;
+    border: 1px solid transparent;
+    height: 40px;
+}
+.searchForm input {
+    padding: 2px;
+    width: 275px;
+    height: 32px;
+    outline: none;
+    margin: 1px;
+    border: 1px solid transparent;
+    font-size: 12px;
+}
+.searchForm button {
+    width: 100px;
+    background-color: #C40000;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    position: relative;
+    top: 2px;
+    left: 5px;
+}
+.searchBelow {
+    margin-top: 5px;
+    margin-left: -10px
+}
+.searchBelow a, .searchBelow span {
+    color: #999;
+    padding: 0 10px;
+    font-size: 14px;
+}
+.logo {
+    position: absolute;
+    top: -45px;
+    left: 20px;
+}
+
+/*searchBarSmall*/
+.searchBarSmall .logo {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+.searchBarSmall .searchForm {
+    float: right;
+    margin: 20px 20px 60px 10px;
+}
+
+/*Footer*/
+.footer {
+    border-top: 1px solid #e7e7e7;
+    margin: 0px;
+}
+.footer-ensure {
+    text-align: center;
+    margin: 20px 0;
+}
+.footer-desc {
+    padding: 20px 40px 0 40px;
+    border-top: 1px solid #e7e7e7;
+    width: 63%;
+    margin: 0 auto;
+}
+.footer-descColumn {
+    width:20%;
+    float: left;
+}
+.footer-desc span, .footer-desc a {
+    display: block;
+}
+.footer span {
+    font-size: 16px;
+    font-weight: bold;
+}
+.big-info {
+    background-color: black;
+    border-top: 2px solid #C40000;
+}
+.information {
+    width: 70%;
+    margin: 0 auto;
+}
+.copyright {
+    background-color: black;
+}
+.white-link {
+    padding: 10px 20px 0px 20px;
+}
+.license {
+    padding: 10px 20px;
+}
+.copyright a, .copyright span{
+    color: white;
+}
+.footer-desc a:hover {
+    color: #C40000;
+}
+.copyright p {
+    color: grey;
+}
+.cateye {
+    margin-left: -8px;
+}
+.footer .QRcode {
+    width: 100px;
+}
+

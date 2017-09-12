@@ -1,0 +1,212 @@
+/*catears*/
+.catear1, .catear2, .catear3, .catear4 ,.catear5,.catear6{
+    position: absolute;
+    width: 30px;
+}
+.catear1 {
+    top: 0px;
+    left: 495px;
+}
+.catear2 {
+    top: 0px;
+    left: 613px;
+}
+.catear3 {
+    top: 0px;
+    left: 717px;
+}
+.catear4 {
+    top: 0px;
+    left: 805px;
+}
+.catear5 {
+    top: 0px;
+    left: 878px;
+}
+.catear6 {
+    top: 0px;
+    left: 965px;
+}
+
+.catearMoveIn1 {
+    animation: catEar1 0.5s forwards ;
+    -moz-animation: catEar1 0.5s forwards ; /* Firefox */
+    -webkit-animation: catEar1 0.5s forwards ;  /* Safari 和 Chrome */
+    -o-animation: catEar1 0.5s forwards ;   /* Opera */
+}
+@keyframes catEar1
+{
+from {top: 0px;left: 495px;}
+to {top: -10px;left: 495px;}
+}
+
+@-moz-keyframes catEar1 /* Firefox */
+{
+from {top: 0px;left: 495px;}
+to {top: -10px;left: 495px;}
+}
+
+@-webkit-keyframes catEar1 /* Safari 和 Chrome */
+{
+from {top: 0px;left: 495px;}
+to {top: -10px;left: 495px;}
+}
+
+@-o-keyframes catEar1 /* Opera */
+{
+from {top: 0px;left: 495px;}
+to {top: -10px;left: 495px;}
+}
+
+.catearMoveIn2 {
+    animation: catEar2 0.5s forwards ;
+    -moz-animation: catEar2 0.5s forwards ; /* Firefox */
+    -webkit-animation: catEar2 0.5s forwards ;  /* Safari 和 Chrome */
+    -o-animation: catEar2 0.5s forwards ;   /* Opera */
+}
+@keyframes catEar2
+{
+from {top: 0px;left: 613px;}
+to {top: -10px;left: 613px;}
+}
+
+@-moz-keyframes catEar2 /* Firefox */
+{
+from {top: 0px;left: 613px;}
+to {top: -10px;left: 613px;}
+}
+
+@-webkit-keyframes catEar2 /* Safari 和 Chrome */
+{
+from {top: 0px;left: 613px;}
+to {top: -10px;left: 613px;}
+}
+
+@-o-keyframes catEar2 /* Opera */
+{
+from {top: 0px;left: 613px;}
+to {top: -10px;left: 613px;}
+}
+
+.catearMoveIn3 {
+    animation: catEar3 0.5s forwards ;
+    -moz-animation: catEar3 0.5s forwards ; /* Firefox */
+    -webkit-animation: catEar3 0.5s forwards ;  /* Safari 和 Chrome */
+    -o-animation: catEar3 0.5s forwards ;   /* Opera */
+}
+@keyframes catEar3
+{
+from {top: 0px;left: 717px;}
+to {top: -10px;left: 717px;}
+}
+
+@-moz-keyframes catEar3 /* Firefox */
+{
+from {top: 0px;left: 717px;}
+to {top: -10px;left: 717px;}
+}
+
+@-webkit-keyframes catEar3 /* Safari 和 Chrome */
+{
+from {top: 0px;left: 717px;}
+to {top: -10px;left: 717px;}
+}
+
+@-o-keyframes catEar3 /* Opera */
+{
+from {top: 0px;left: 717px;}
+to {top: -10px;left: 717px;}
+}
+
+.catearMoveIn4 {
+    animation: catEar4 0.5s forwards ;
+    -moz-animation: catEar4 0.5s forwards ; /* Firefox */
+    -webkit-animation: catEar4 0.5s forwards ;  /* Safari 和 Chrome */
+    -o-animation: catEar4 0.5s forwards ;   /* Opera */
+}
+@keyframes catEar4
+{
+from {top: 0px;left: 805px;}
+to {top: -10px;left: 805px;}
+}
+
+@-moz-keyframes catEar4 /* Firefox */
+{
+from {top: 0px;left: 805px;}
+to {top: -10px;left: 805px;}
+}
+
+@-webkit-keyframes catEar4 /* Safari 和 Chrome */
+{
+from {top: 0px;left: 805px;}
+to {top: -10px;left: 805px;}
+}
+
+@-o-keyframes catEar4 /* Opera */
+{
+from {top: 0px;left: 805px;}
+to {top: -10px;left: 805px;}
+}
+
+
+.catearMoveIn5 {
+    animation: catEar5 0.5s forwards ;
+    -moz-animation: catEar5 0.5s forwards ; /* Firefox */
+    -webkit-animation: catEar5 0.5s forwards ;  /* Safari 和 Chrome */
+    -o-animation: catEar5 0.5s forwards ;   /* Opera */
+}
+@keyframes catEar5
+{
+from {top: 0px;left: 878px;}
+to {top: -10px;left: 878px;}
+}
+
+@-moz-keyframes catEar5 /* Firefox */
+{
+from {top: 0px;left: 878px;}
+to {top: -10px;left: 878px;}
+}
+
+@-webkit-keyframes catEar5 /* Safari 和 Chrome */
+{
+from {top: 0px;left: 878px;}
+to {top: -10px;left: 878px;}
+}
+
+@-o-keyframes catEar5 /* Opera */
+{
+from {top: 0px;left: 878px;}
+to {top: -10px;left: 878px;}
+}
+
+
+.catearMoveIn6 {
+    animation: catEar6 0.5s forwards ;
+    -moz-animation: catEar6 0.5s forwards ; /* Firefox */
+    -webkit-animation: catEar6 0.5s forwards ;  /* Safari 和 Chrome */
+    -o-animation: catEar6 0.5s forwards ;   /* Opera */
+}
+@keyframes catEar6
+{
+from {top: 0px;left: 965px;}
+to {top: -10px;left: 965px;}
+}
+
+@-moz-keyframes catEar6 /* Firefox */
+{
+from {top: 0px;left: 965px;}
+to {top: -10px;left: 965px;}
+}
+
+@-webkit-keyframes catEar6 /* Safari 和 Chrome */
+{
+from {top: 0px;left: 965px;}
+to {top: -10px;left: 965px;}
+}
+
+@-o-keyframes catEar6 /* Opera */
+{
+from {top: 0px;left: 965px;}
+to {top: -10px;left: 965px;}
+}
+

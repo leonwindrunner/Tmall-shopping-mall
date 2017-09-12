@@ -1,0 +1,148 @@
+.sortBar {
+	width: 63%;
+	margin: 20px auto;
+	display: block;
+
+}
+.sortBar img {
+	width: 100%;
+}
+.sortChoice {
+	background-color: #FAF9F9;
+	padding: 5px;
+	margin-top: 10px;
+}
+.sortChoice span {
+	border: 1px solid #999;
+	display: inline-block;
+	margin: 0;
+	padding: 5px;
+	font-size: 12px;
+	cursor: pointer;
+}
+.sortChoice span:hover {
+	background-color: #F1EDEC;
+	color: #C40000;
+	text-decoration: underline;
+}
+.sortPrice span:hover {
+	background-color: white;
+	color: black;
+	text-decoration: none;
+}
+.sortPrice {
+	display: inline;
+
+}
+.sortPrice span {
+	cursor: default;
+}
+.sortPrice input {
+	width: 100px;
+	height: 19.6px;
+	position: relative;
+	top: -1px;
+}
+
+.content {
+	width: 1000px;
+	margin: 10px auto 40px auto;
+	/*background-color: grey;*/
+}
+.contentUnit{
+	border: 4px solid white;
+	float: left;
+	padding: 0;
+	margin: 5px;
+}
+.contentUnit:hover {
+	border: 4px solid #C40000;
+}
+.contentBox {
+	/*background-color: white;*/
+	width: 230px;
+	border: 1px solid #eee;
+	padding: 0;
+}
+
+.contentBox:hover {
+	border: 1px solid #C40000;
+}
+
+.contentBox img {
+	width: 100%;
+}
+
+.contentBox img,.contentBox a{
+	display: block;
+}
+
+.contentInfo {
+	border-top: 1px solid #eee;
+	height: 30px;
+}
+
+.contentInfo span,.contentInfo img {
+	display: inline;
+}
+.contentInfo img {
+	width: 14px;
+	position: relative;
+	top: 8px;
+	left: 8px;
+	cursor: pointer;
+}
+.contentInfo .contentDeal {
+	height: 30px;
+	width: 300px;
+	padding: 15px;
+	font-size: 15px;
+	position: relative;
+	top: 6px;
+	color: #999;
+}
+.contentInfo .contentDealNumber {
+	color: #B57C5B;
+}
+
+.contentInfo .contentReview {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	padding: 7px 12px;
+	font-size: 15px;
+	position: relative;
+	top: 6px;
+	color: #999;
+}
+
+.contentInfo .contentReviewNumber {
+	color: #3388BB;
+}
+
+
+.contentBox .price {
+	font-size: 20px;
+	/*font-weight: bold;*/
+	color: #CC0000;
+	margin: 10px 5px 5px 5px;
+}
+
+.contentBox .detail {
+	margin: 10px 0;
+	color: black;
+}
+
+.contentBox .detail:hover {
+	color: #C40000;
+	text-decoration: underline;
+}
+
+.contentBox .shop {
+	margin:10px 0;
+	text-decoration: underline;
+}
+
+
+.active {
+	background-color: #F1EDEC;
+}
